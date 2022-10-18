@@ -10,6 +10,15 @@
 ### The project is divided in 3 steps: 
 
 1. Build the Blockchain.
-2. Mine the Blockchain to let the new blocks be created.
+2. Mine the Blockchain to let the new blocks be added.
 3. Run the app to recieve the results. 
 
+### Build the Blockchain.
+
+Each Block is going to have the next attributes: 
+
+ def create_block(self, proof, previous_hash):             
+      block = {'index': len(self.chain) + 1,
+               'timestamp': str(datetime.datetime.now()), 
+               'proof': proof,
+               'previous_hash': previous_hash}
