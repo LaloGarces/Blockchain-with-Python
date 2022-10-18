@@ -74,11 +74,10 @@ In this part, we're going to assume that a miner is mining a Block to be added t
 ### 3. Run the app to recieve the results.
 
 We created: 
-
-'''@app.route('/mine_block', methods = ['GET'])'''
+ ```@app.route('/mine_block', methods = ['GET']) ```
 
 To get the response when mining a Block.
 
-'''@app.route('/get_chain', methods = ['GET'])'''
+ ```@app.route('/get_chain', methods = ['GET']) ```
 
 To get the response of the chain with the Blocks added previusly. 
