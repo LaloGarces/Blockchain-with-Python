@@ -33,6 +33,27 @@ Where:
 
 **IMPORTANT**
 
-What is Proof of Work? 
+**What is Proof of Work?** 
 
 Proof of work (PoW) is a decentralized consensus mechanism that requires members of a network to expend effort solving an arbitrary mathematical puzzle to prevent anybody from gaming the system.
+
+
+**What is the SHA-256 Algorithm**
+
+SHA-2 (Secure Hash Algorithm 2), of which SHA-256 is a part, is one of the most popular hash algorithms around. A cryptographic hash, also often referred to as a “digest”, “fingerprint” or “signature”, is an almost perfectly unique string of characters that is generated from a separate piece of input text. SHA-256 generates a 256-bit (32-byte) signature.
+
+To generate the hash of each block, we're going to use "hashlib"
+
+
+ ```def proof_of_work(self, previous_proof):
+      new_proof = 1                                        
+      check_proof = False                                   
+      while check_proof is False:
+          hash_operation = hashlib.sha256(str(new_proof**2 - previous_proof**2).encode()).hexdigest()
+          if hash_operation[:4] == '0000':                 
+            check_proof = True
+          else:
+              new_proof +=1
+      return new_proof
+
+ ```
