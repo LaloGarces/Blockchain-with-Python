@@ -57,13 +57,14 @@ To generate the hash of each block, we're going to use "hashlib"
       return new_proof
 
  ```
-For more information about Haslib for Python: https://docs.python.org/3/library/hashlib.html
+For more information about haslib for Python: https://docs.python.org/3/library/hashlib.html
 
 ### 2. Mine the Blockchain.
 
 In this part, we're going to assume that a miner is mining a Block to be added to the chain, getting the next result to be received to the miner
 
- ```response = {'message': 'You just have mined succesfully a block!',   #--> Message to the miner after mined a block
+ ```
+ response = {'message': 'You just have mined succesfully a block!',   
                 'index': block['index'],
                 'timestamp': block['timestamp'],
                 'proof': block['proof'],
