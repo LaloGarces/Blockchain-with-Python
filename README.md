@@ -6,3 +6,10 @@
 
 - For more information about Postman: https://www.postman.com/
 - For more information about Flask: https://flask.palletsprojects.com/en/2.2.x/
+
+### The project is divided in 3 steps: 
+
+1. Build the Blockchain.
+2. Mine the Blockchain to let the new blocks be created.
+3. Run the app to recieve the results. 
+
