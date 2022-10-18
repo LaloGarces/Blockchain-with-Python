@@ -26,7 +26,13 @@ Each Block is going to have the next attributes:
 
 Where:
 
-- Index: The number of the block.
-- Time Stamp: The moment of the creation of the block. 
-- Proof: We're going to use Proof of Work (PoW) to mine the block.
-- Previous Hash: The hash of the last block. 
+- **Index**: The number of the block.
+- **Time Stamp**: The moment of the creation of the block. 
+- **Proof**: We're going to use Proof of Work (PoW) to mine the block.
+- **Previous Hash**: The hash of the last block. 
+
+**IMPORTANT**
+
+What is Proof of Work? 
+
+Proof of work (PoW) is a decentralized consensus mechanism that requires members of a network to expend effort solving an arbitrary mathematical puzzle to prevent anybody from gaming the system.
