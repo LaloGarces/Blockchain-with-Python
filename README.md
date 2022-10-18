@@ -21,7 +21,8 @@ Each Block is going to have the next attributes:
       block = {'index': len(self.chain) + 1,
                'timestamp': str(datetime.datetime.now()), 
                'proof': proof,
-               'previous_hash': previous_hash}
+               'previous_hash': previous_hash} 
+ ```
 
 Where:
 
