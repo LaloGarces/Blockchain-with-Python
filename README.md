@@ -130,4 +130,4 @@ After mining several Blocks, you will get in Postman a chain like this with all 
         }
     ],
     "length": 7
-} ```
+}```
