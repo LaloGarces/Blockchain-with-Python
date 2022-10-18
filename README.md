@@ -81,3 +81,53 @@ To get the response when mining a Block.
  ```@app.route('/get_chain', methods = ['GET']) ```
 
 To get the response of the chain with the Blocks added previusly. 
+
+After mining several Blocks, you will get in Postman a chain like this with all the results:
+
+ ```{
+    "chain": [
+        {
+            "index": 1,
+            "previous_hash": "0",
+            "proof": 1,
+            "timestamp": "2022-10-18 12:29:09.048680"
+        },
+        {
+            "index": 2,
+            "previous_hash": "e85fc637a138b6575be5344322b9d666f2c4a226e2624fe4bc785a1d5e32fdd5",
+            "proof": 533,
+            "timestamp": "2022-10-18 12:33:57.577925"
+        },
+        {
+            "index": 3,
+            "previous_hash": "151701b6081645981c9af67bb26c0e4eb4637aea2cbc3842e22a2455d6e0453b",
+            "proof": 45293,
+            "timestamp": "2022-10-18 12:36:32.438224"
+        },
+        {
+            "index": 4,
+            "previous_hash": "66382bbab5cbe1df77526584a375a2b1f9315682b0ec40219b6964ae2360f0d3",
+            "proof": 21391,
+            "timestamp": "2022-10-18 12:36:33.290545"
+        },
+        {
+            "index": 5,
+            "previous_hash": "018d8254386a167a1b43977014fbae76e00364171faec9c757ce2544034b8a16",
+            "proof": 8018,
+            "timestamp": "2022-10-18 12:36:34.032219"
+        },
+        {
+            "index": 6,
+            "previous_hash": "837e23c14624306641bc4ae3913be55800ca25c0b7569b9ce9c29b9e8c04621c",
+            "proof": 48191,
+            "timestamp": "2022-10-18 12:36:34.994703"
+        },
+        {
+            "index": 7,
+            "previous_hash": "a8859d00f5269bb96af721c66c2fd46cdeef51b693f9025a3ce939ae82d1fbf9",
+            "proof": 19865,
+            "timestamp": "2022-10-18 12:36:35.658929"
+        }
+    ],
+    "length": 7
+} ```
