@@ -22,4 +22,10 @@ Each Block is going to have the next attributes:
                'timestamp': str(datetime.datetime.now()), 
                'proof': proof,
                'previous_hash': previous_hash}
-''' 
+
+Where:
+
+- Index: The number of the block.
+- Time Stamp: The moment of the creation of the block. 
+- Proof: We're going to use Proof of Work (PoW) to mine the block.
+- Previous Hash: The hash of the last block. 
