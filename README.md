@@ -13,7 +13,7 @@
 2. Mine the Blockchain to let the new blocks be added.
 3. Run the app to recieve the results. 
 
-### Build the Blockchain.
+### 1. Build the Blockchain.
 
 Each Block is going to have the next attributes: 
 
@@ -59,9 +59,9 @@ To generate the hash of each block, we're going to use "hashlib"
  ```
 For more information about Haslib for Python: https://docs.python.org/3/library/hashlib.html
 
-### Mine the Blockchain.
+### 2. Mine the Blockchain.
 
-In this part, we're going to assume that a miner is mining our Block to be added to the chain getting the next result to be recieved to the miner
+In this part, we're going to assume that a miner is mining a Block to be added to the chain, getting the next result to be received to the miner
 
  ```response = {'message': 'You just have mined succesfully a block!',   #--> Message to the miner after mined a block
                 'index': block['index'],
@@ -71,3 +71,14 @@ In this part, we're going to assume that a miner is mining our Block to be added
  
  ```
                 
+### 3. Run the app to recieve the results.
+
+We created: 
+
+'''@app.route('/mine_block', methods = ['GET'])'''
+
+To get the response when mining a Block.
+
+'''@app.route('/get_chain', methods = ['GET'])'''
+
+To get the response of the chain with the Blocks added previusly. 
